@@ -5,7 +5,7 @@ a = 20
 alert(a)
 
 // Задание 2
-let yearCreator = 2007
+let iphoneCreator = 2007
 alert(yearCreator)
 
 // Задание 3
