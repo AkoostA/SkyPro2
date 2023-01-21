@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+:root {
+    --text-color: #FFFFFF;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -23,7 +27,7 @@ body {
         font-weight: 700;
         font-size: 64px;
         line-height: 78px;
-        color: #FFFFFF;
+        color: var(--text-color);
         padding-top: 217px;
     }
 
@@ -31,7 +35,7 @@ body {
         font-weight: 300;
         font-size: 18px;
         line-height: 32px;
-        color: #FFFFFF;
+        color: var(--text-color);
         margin-top: 32px;
         margin-bottom: 44px;
     }
@@ -41,6 +45,7 @@ body {
     }
 
     &__button {
+        font-family: 'Montserrat', sans-serif;
         width: 234.06px;
         height: 48.6px;
         background: #9C0332;
@@ -48,7 +53,7 @@ body {
         font-weight: 400;
         font-size: 18px;
         line-height: 22px;
-        color: #FFFFFF;
+        color: var(--text-color);
     }
 }
 
@@ -97,7 +102,7 @@ body {
         font-weight: 600;
         font-size: 24px;
         line-height: 32px;
-        color: #FFFFFF;
+        color: var(--text-color);
         margin-top: 236px;
         margin-left: 32px;
     }
