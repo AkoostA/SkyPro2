@@ -54,6 +54,11 @@ body {
         font-size: 18px;
         line-height: 22px;
         color: var(--text-color);
+
+        &:hover {
+            background: #EB443F;
+            cursor: url(./img/Vector.png), pointer;
+        }
     }
 }
 
@@ -75,6 +80,13 @@ body {
         width: 378px;
         height: 300px;
         border-radius: 20px;
+        transition: 0.5s;
+
+        &:hover {
+            outline: 3px solid #44D2FF;
+            transform: scale(1.1);
+            cursor: url(./img/Vector.png), pointer;
+        }
 
         &-one {
             background-image: url(./img/GameOne.jpg);
@@ -107,3 +119,5 @@ body {
         margin-left: 32px;
     }
 }
+
+@import "mobile";
