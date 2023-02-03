@@ -5,6 +5,8 @@
 
 :root {
   --text-color: #FFFFFF;
+  --button-color: #9C0332;
+  --button-hover: #EB443F;
 }
 
 body {
@@ -12,8 +14,8 @@ body {
 }
 
 .center {
-  padding-left: calc(50% - 600px);
-  padding-right: calc(50% - 600px);
+  padding-left: calc(50% - 720px);
+  padding-right: calc(50% - 720px);
 }
 
 .header {
@@ -38,14 +40,14 @@ body {
   margin-top: 32px;
   margin-bottom: 44px;
 }
-.header__fat {
+.header__span {
   font-weight: 700;
 }
 .header__button {
   font-family: "Montserrat", sans-serif;
   width: 234.06px;
   height: 48.6px;
-  background: #9C0332;
+  background: var(--button-color);
   border-radius: 30px;
   font-weight: 400;
   font-size: 18px;
@@ -53,12 +55,12 @@ body {
   color: var(--text-color);
 }
 .header__button:hover {
-  background: #EB443F;
+  background: var(--button-hover);
   cursor: url(./img/Vector.png), pointer;
 }
 
-.footer {
-  background-image: url(./img/BK__footer.jpg);
+.game {
+  background-image: url(./img/BK__game.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -69,42 +71,88 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(378px, 1fr));
   gap: 32px;
 }
-.footer__game {
+.game__box {
   width: 378px;
   height: 300px;
   border-radius: 20px;
   transition: 0.5s;
 }
-.footer__game:hover {
+.game__box:hover {
   outline: 3px solid #44D2FF;
   transform: scale(1.1);
   cursor: url(./img/Vector.png), pointer;
 }
-.footer__game-one {
+.game-one {
   background-image: url(./img/GameOne.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.footer__game-two {
+.game-two {
   background-image: url(./img/GameTwo.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.footer__game-three {
+.game-three {
   background-image: url(./img/GameThee.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.footer__title {
+.game__title {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
   color: var(--text-color);
   margin-top: 236px;
   margin-left: 32px;
+}
+
+.seasons {
+  background-image: url(./img/BK__season.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 233.5px;
+  padding-bottom: 233.5px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(584px, 1fr));
+  gap: 135px;
+}
+.seasons__play {
+  width: 584px;
+}
+.seasons__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: var(--text-color);
+}
+.seasons__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--text-color);
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.seasons__button {
+  font-family: "Montserrat", sans-serif;
+  width: 234.06px;
+  height: 48.6px;
+  background: var(--button-color);
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--text-color);
+}
+.seasons__button:hover {
+  background: var(--button-hover);
+  cursor: url(./img/Vector.png), pointer;
 }
 
 @media (min-width: 768px) {
@@ -121,6 +169,7 @@ body {
     padding-right: 16px;
   }
   .header {
+    background-image: url(./img/BK__mobile.jpg);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,10 +184,33 @@ body {
     font-size: 14px;
     line-height: 22px;
   }
-  .footer {
+  .game {
     grid-template-columns: repeat(auto-fit, minmax(343px, 1fr));
   }
-  .footer__game {
+  .game__box {
     width: 343px;
+  }
+  .seasons {
+    grid-template-columns: repeat(auto-fit, minmax(343px, 1fr));
+    padding-top: 51px;
+    padding-bottom: 85px;
+    gap: 64.5px;
+  }
+  .seasons__play {
+    width: 343px;
+    display: grid;
+    justify-items: center;
+  }
+  .seasons__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .seasons__text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .seasons__logo {
+    width: 344px;
   }
 }/*# sourceMappingURL=style.css.map */

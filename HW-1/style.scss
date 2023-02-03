@@ -5,6 +5,8 @@
 
 :root {
     --text-color: #FFFFFF;
+    --button-color: #9C0332;
+    --button-hover: #EB443F;
 }
 
 body {
@@ -12,8 +14,8 @@ body {
 }
 
 .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+    padding-left: calc(50% - 720px);
+    padding-right: calc(50% - 720px);
 }
 
 .header {
@@ -40,7 +42,7 @@ body {
         margin-bottom: 44px;
     }
 
-    &__fat {
+    &__span {
         font-weight: 700;
     }
 
@@ -48,7 +50,7 @@ body {
         font-family: 'Montserrat', sans-serif;
         width: 234.06px;
         height: 48.6px;
-        background: #9C0332;
+        background: var(--button-color);
         border-radius: 30px;
         font-weight: 400;
         font-size: 18px;
@@ -56,15 +58,14 @@ body {
         color: var(--text-color);
 
         &:hover {
-            background: #EB443F;
+            background: var(--button-hover);
             cursor: url(./img/Vector.png), pointer;
         }
     }
 }
 
-
-.footer {
-    background-image: url(./img/BK__footer.jpg);
+.game {
+    background-image: url(./img/BK__game.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -76,7 +77,7 @@ body {
     gap: 32px;
 
 
-    &__game {
+    &__box {
         width: 378px;
         height: 300px;
         border-radius: 20px;
@@ -87,27 +88,27 @@ body {
             transform: scale(1.1);
             cursor: url(./img/Vector.png), pointer;
         }
+    }
 
-        &-one {
-            background-image: url(./img/GameOne.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
+    &-one {
+        background-image: url(./img/GameOne.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 
-        &-two {
-            background-image: url(./img/GameTwo.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
+    &-two {
+        background-image: url(./img/GameTwo.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 
-        &-three {
-            background-image: url(./img/GameThee.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
+    &-three {
+        background-image: url(./img/GameThee.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
     &__title {
@@ -117,6 +118,57 @@ body {
         color: var(--text-color);
         margin-top: 236px;
         margin-left: 32px;
+    }
+}
+
+.seasons {
+    background-image: url(./img/BK__season.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 233.5px;
+    padding-bottom: 233.5px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(584px, 1fr));
+    gap: 135px;
+
+    &__play {
+        width: 584px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        color: var(--text-color);
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: var(--text-color);
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    &__button {
+        font-family: 'Montserrat', sans-serif;
+        width: 234.06px;
+        height: 48.6px;
+        background: var(--button-color);
+        border-radius: 30px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: var(--text-color);
+
+        &:hover {
+            background: var(--button-hover);
+            cursor: url(./img/Vector.png), pointer;
+        }
     }
 }
 

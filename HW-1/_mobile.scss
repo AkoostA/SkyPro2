@@ -17,6 +17,7 @@
     }
 
     .header {
+        background-image: url(./img/BK__mobile.jpg);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -34,11 +35,39 @@
         }
     }
 
-    .footer {
+    .game {
         grid-template-columns: repeat(auto-fit, minmax(343px, 1fr));
 
-        &__game {
+        &__box {
             width: 343px;
+        }
+    }
+
+    .seasons {
+        grid-template-columns: repeat(auto-fit, minmax(343px, 1fr));
+        padding-top: 51px;
+        padding-bottom: 85px;
+        gap: 64.5px;
+
+        &__play {
+            width: 343px;
+            display: grid;
+            justify-items: center;
+        }
+
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+        }
+
+        &__logo {
+            width: 344px;
         }
     }
 }
